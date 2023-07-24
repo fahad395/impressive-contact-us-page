@@ -1,0 +1,212 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+
+}
+section
+ {
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#112d42;
+    display: flex;
+
+}
+section::before
+{
+    content: '';
+    position:absolute;
+     top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #a5f408;
+    
+}
+
+
+
+
+section .container
+{position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+section .container .contactinfo
+{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #ed6398;
+    z-index: 1;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 20px 20px rgba(65, 45, 45, 0.2)
+   ;
+}
+section .container .contactinfo h2
+{
+  color:rgb(229, 224, 224);
+    
+    font-weight:500;
+    font-size: 35px;
+}
+section .container .contactinfo .info
+{ 
+  position: relative;
+  margin: 20px 0; 
+
+}
+section .container .contactinfo .info li
+{font-size: 18px;
+    position:relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+    
+
+}
+section .container .contactinfo .info li span:nth-child(1)
+{      
+
+    width: 30px;
+    min-width: 30px;
+
+}
+section .container .contactinfo .info li span:nth-child(2)
+{
+   color: #fff;
+   margin-left: 10px;
+   font-weight: 300;
+   opacity: 0.5;
+
+}
+section .container .contactinfo .info li:hover span:nth-child(1)
+section .container .contactinfo .info li:hover span:nth-child(2)
+{
+    opacity: 1;
+}
+section .container .contactinfo .sci
+{
+   position: relative;
+   display:flex ; 
+   
+}
+section .container .contactinfo .sci li
+{font-weight:bolder;
+    list-style: none;
+    margin-right: 15px;
+font-size: 20px;
+}
+
+
+section .container .contactinfo .sci li:hover 
+{cursor:pointer;
+    opacity: 1;
+    font-size: 30px;
+    color: rgb(238, 244, 242);
+}
+section .container .contactform
+{position: absolute;
+    padding: 50px 50px;
+    background:#fff;
+    width: calc(100%-150px);
+    margin-left: 150px;
+    padding-left: 250px;
+    height: 90%;
+    box-shadow:0 50px 50px rgba(0,0,0,0) ;
+    border-radius: 20px;
+}
+section .container .contactform .formbox
+{
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+   
+
+}
+section .container .contactform .formbox .inputbox
+{
+    position: relative;
+    margin: 0 0 35px 0;
+
+}
+
+section .container .contactform .formbox .inputbox.w50
+{width:47%;
+    padding: 5px 0;
+}
+section .container .contactform .formbox .inputbox.w100
+{ width: 100%;
+
+
+}
+section .container .contactform .formbox .inputbox input,
+section .container .contactform .formbox .inputbox textarea
+{ width: 100px !important;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color:#333 ;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+   
+}
+section .container .contactform .formbox .inputbox textarea
+{
+min-height: 120px;
+}
+section .container .contactform .formbox .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color:#333 ;
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+section .container .contactform .formbox .inputbox textarea
+{
+   min-height: 120px; 
+}
+section .container .contactform .formbox .inputbox input:focus ~ span,
+section .container .contactform .formbox .inputbox textarea:focus ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+section .container .contactform .formbox .inputbox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    
+}
